@@ -14,6 +14,7 @@ public class RuntimeConstantPoolOOM {
         List<String> list = new ArrayList<>();
         int i = 0;
         while (true){
+            //会把首次出现的字符串存入到运行时常量池
             list.add(String.valueOf(i++).intern());
         }
     }
