@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -14,7 +16,7 @@ public class HeapOOM {
     }
 
     public static void main(String[] args) {
-        List<OOMObject> list = new ArrayList<>();
+        List<OOMObject> list = Collections.emptyList();
         while (true){
             list.add(new OOMObject());
         }
